@@ -11,6 +11,9 @@ import os
 
 EXCUSE = "The homework looked at me first. In dog law, that's consent."
 
+# The gate allows 1-200 characters; keep the excuse inside it.
+assert 1 <= len(EXCUSE) <= 200
+
 
 def main() -> None:
     os.makedirs("/output", exist_ok=True)
